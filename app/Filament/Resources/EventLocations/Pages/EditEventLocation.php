@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Filament\Resources\EventLocations\Pages;
+
+use App\Filament\Resources\EventLocations\EventLocationResource;
+use Filament\Actions\DeleteAction;
+use Filament\Resources\Pages\EditRecord;
+
+class EditEventLocation extends EditRecord
+{
+    protected static string $resource = EventLocationResource::class;
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            DeleteAction::make(),
+        ];
+    }
+}

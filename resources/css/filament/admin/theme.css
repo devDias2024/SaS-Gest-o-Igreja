@@ -1,0 +1,115 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+/*
+ * Awin-inspired panel styling for Filament v5.
+ * The Awin package currently requires Filament v4, so these styles keep the
+ * same visual language while using the v5 theme pipeline.
+ */
+@theme inline {
+    --color-gray-50: var(--color-slate-50);
+    --color-gray-100: var(--color-slate-100);
+    --color-gray-200: var(--color-slate-200);
+    --color-gray-300: var(--color-slate-300);
+    --color-gray-400: var(--color-slate-400);
+    --color-gray-500: var(--color-slate-500);
+    --color-gray-600: var(--color-slate-600);
+    --color-gray-700: var(--color-slate-700);
+    --color-gray-800: var(--color-slate-800);
+    --color-gray-900: var(--color-slate-900);
+    --color-gray-950: var(--color-slate-950);
+}
+
+.fi-body {
+    @apply bg-white dark:bg-gray-800;
+}
+
+.fi-simple-main-ctn {
+    @apply bg-gray-100 dark:bg-gray-900;
+}
+
+.fi-simple-main {
+    @apply relative rounded-2xl border border-gray-300 bg-gray-50 p-6 shadow-none ring-0 dark:border-gray-700 dark:bg-gray-800;
+}
+
+.fi-main-ctn {
+    @apply sticky top-0 grid h-[calc(100vh-4rem)] grid-rows-[auto_auto] justify-between overflow-y-auto border-s border-t border-gray-300 bg-gray-100 lg:rounded-ss-4xl dark:border-gray-700 dark:bg-gray-900;
+}
+
+.fi-body.fi-body-has-sidebar-fully-collapsible-on-desktop .fi-main-ctn:not(.fi-main-ctn-sidebar-open),
+.fi-body:not(.fi-body-has-topbar) .fi-main-ctn,
+.fi-body.fi-body-has-top-navigation .fi-main-ctn {
+    @apply rounded-ss-none;
+}
+
+.fi-main {
+    @apply block h-auto min-h-auto;
+}
+
+.fi-topbar {
+    @apply relative bg-white shadow-none ring-0 dark:bg-gray-800;
+}
+
+.fi-sidebar-open .fi-sidebar-item .fi-sidebar-item-btn,
+.fi-tenant-menu-trigger {
+    @apply rounded-full px-4;
+}
+
+.fi-sidebar-item.fi-active .fi-sidebar-item-btn {
+    @apply rounded-full bg-primary-600 shadow-sm transition-all duration-300 dark:bg-primary-500;
+}
+
+.fi-sidebar-item.fi-active .fi-sidebar-item-btn .fi-sidebar-item-label,
+.fi-sidebar-item.fi-active .fi-sidebar-item-btn .fi-sidebar-item-icon {
+    @apply text-primary-50;
+}
+
+.fi-sidebar-item > .fi-sidebar-item-btn {
+    @apply hover:rounded-full hover:bg-gray-100 hover:transition-all hover:duration-300 dark:hover:bg-gray-700;
+}
+
+.fi-sidebar-item .fi-sidebar-item-badge-ctn .fi-badge {
+    @apply rounded-full bg-primary-600 text-white dark:bg-primary-500;
+}
+
+.fi-sidebar-item.fi-active .fi-sidebar-item-badge-ctn .fi-badge {
+    @apply bg-primary-50 text-primary-900;
+}
+
+.fi-tabs {
+    @apply rounded-2xl border border-gray-300 bg-gray-50 p-2 shadow-none ring-0 dark:border-gray-700 dark:bg-gray-800;
+}
+
+.fi-sc-section,
+.fi-wi-widget:not(.fi-wi-stats-overview) {
+    @apply rounded-2xl border border-gray-300 bg-gray-50 p-1 dark:border-gray-700 dark:bg-gray-800;
+}
+
+.fi-section,
+.fi-ta-ctn {
+    @apply rounded-xl border border-gray-300 bg-white shadow-none ring-0 dark:border-gray-700 dark:bg-gray-800;
+}
+
+.fi-ta {
+    @apply rounded-2xl border border-gray-300 bg-gray-50 p-1 dark:border-gray-700 dark:bg-gray-800;
+}
+
+.fi-ta-ctn .fi-ta-header-toolbar {
+    @apply border-0;
+}
+
+.fi-wi-stats-overview-stat,
+.fi-wi-table {
+    @apply rounded-2xl shadow-none ring-0 dark:bg-gray-800;
+}
+
+.fi-input-wrp {
+    @apply shadow-none;
+}
+
+.fi-modal-window,
+.fi-dropdown-panel {
+    @apply rounded-2xl;
+}
