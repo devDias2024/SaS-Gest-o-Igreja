@@ -18,6 +18,8 @@ Este é um sistema SaaS completo para gestão de igrejas, construído com Larave
 6. Inicie o servidor com `php artisan serve`
 
 7. <img width="1919" height="888" alt="image" src="https://github.com/user-attachments/assets/f0182b66-13cb-4440-b88a-16f09806bec5" />
+<img width="1920" height="2668" alt="screencapture-saas-igreja-test-admin-2026-05-27-16_16_50" src="https://github.com/user-attachments/assets/de34170b-3195-42ca-8e8b-e862aa3f86c1" />
+
 
 
 ## Requisitos
