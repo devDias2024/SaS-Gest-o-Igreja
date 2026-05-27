@@ -17,6 +17,9 @@ Este é um sistema SaaS completo para gestão de igrejas, construído com Larave
 5. Rode as migrações com `php artisan migrate`
 6. Inicie o servidor com `php artisan serve`
 
+7. <img width="1919" height="888" alt="image" src="https://github.com/user-attachments/assets/f0182b66-13cb-4440-b88a-16f09806bec5" />
+
+
 ## Requisitos
 - PHP 8.2+
 - MySQL 8.0+
